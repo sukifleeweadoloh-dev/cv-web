@@ -1,0 +1,101 @@
+body { 
+    cursor: none;
+    background-color: rgb(115, 100, 100); 
+}
+
+
+
+.table {
+    display: grid;
+    grid-template-areas:
+        "menu header"
+        "menu content"
+        "menu footer";
+    grid-template-columns: auto 3fr;
+    grid-template-rows: 60px auto auto;
+    gap: 3px;
+    padding: 6px;
+    background-color: rgb(80, 1, 1);
+}
+
+.table div {
+    background-color: rgb(159, 159, 159);
+    padding: 10px;
+}
+
+.table div.header {
+    grid-area: header;
+    text-align: center;
+    vertical-align: middle;
+}
+.table div.menu {
+    grid-area: menu;
+}
+.table div.content {
+    grid-area: content;
+}
+.table div.footer {
+    grid-area: footer;
+    text-align: center;  
+}
+
+.table div.pf {
+ img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+ }
+
+}
+
+.table div.CT1 {
+    
+    font-size: 20px;
+    font-weight: bold;
+}
+.table div.CT2 {
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+.table div.CT3 {
+   
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 10s ease;
+}
+
+#loader img {
+    max-width: auto;
+    max-height: auto;
+}
+
+#main-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.mous {
+   border-radius: 50%;
+   position: fixed;
+   pointer-events: none;
+   transition: transform 0.1s ease;
+   z-index: 9999;
+}

@@ -1,0 +1,9 @@
+﻿[Hand]
+Path=CursorAttackMelee.cur
+
+[Arrow]
+Path=CursorNormal.cur
+
+[Wait]
+Path=CursorTravelling.cur
+

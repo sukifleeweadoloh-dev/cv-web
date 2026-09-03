@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded',() => {
         normal: 'img/CursorNormal.cur',
         move: 'img/CursorMove.cur',
         travelling: 'img/CursorTravelling.cur',
-        pandown: 'img/CursorPandown.cur',
-        panup: 'img/CursorPanup.cur'
+        pandown: 'img/CursorPanDown.cur',
+        panup: 'img/CursorPanUp.cur'
     };
 
     let currentCursor = 'normal';
@@ -31,10 +31,8 @@ document.addEventListener('DOMContentLoaded',() => {
         setCursor('travelling');
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        isLoading = false;
-        setCursor('normal');
-    });
+    isLoading = false;
+    setCursor('normal');
 
     window.addEventListener('load', () => {
         isLoading = false;
@@ -91,27 +89,30 @@ document.addEventListener('DOMContentLoaded',() => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener('load', () => {
     const displaytime = 1000; // is 1s
     const loader = document.getElementById('loader');
     const mainContent = document.getElementById('main-content');
 
-    mainContent.style.display = 'grid';
-    mainContent.style.opacity = '1';
+    if (mainContent) {
+        mainContent.style.display = 'grid';
+        mainContent.style.opacity = '1';
+    }
 
-    setTimeout(() => {
-       loader.style.opacity = '0';
+    if (loader) {
+        setTimeout(() => {
+            loader.style.opacity = '0';
 
-       setTimeout(() => {
-           loader.style.display = 'none';
-           mainContent.style.display = 'grid';
-
-           setTimeout(() => {
-               mainContent.style.opacity = '1';
-           }, 50);
-       }, 600);
-    }, displaytime);
-
+            setTimeout(() => {
+                loader.style.display = 'none';
+                if (mainContent) {
+                    mainContent.style.display = 'grid';
+                    setTimeout(() => {
+                        mainContent.style.opacity = '1';
+                    }, 50);
+                }
+            }, 600);
+        }, displaytime);
+    }
 });
         

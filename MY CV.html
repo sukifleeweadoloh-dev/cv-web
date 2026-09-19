@@ -9,62 +9,142 @@
         <meta name="author" content="sukiflee waedorloh">
         <title>Sukiflee waedorloh - Resume</title>
         <link rel="stylesheet" href="ui.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="slide.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="meru bar.css">
     </head>
     <body> 
 
-        <script src="popup.js"></script>
+  
 
-    <div id="loader">
-        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGo2d3Y4dXRrYXdjd242OTE0emNkOXk0ZGt0Yjg0cnh2YWM0dWs2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3q2x2gFLpDA07uco/giphy.webp" 
-        alt="Loading...">
-    </div>
+                        <script src="popup.js"></script>
+                            <div id="loader">
+                                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGo2d3Y4dXRrYXdjd242OTE0emNkOXk0ZGt0Yjg0cnh2YWM0dWs2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l3q2x2gFLpDA07uco/giphy.webp" 
+                                alt="Loading...">
+                            </div>
+                            
+                    <div class="mous">
+                        <img src="img/CursorNormal.cur" alt="Custom Cursor" class="cursor-image" style="display: inline;">
+                    </div>
 
-    <div class="mous">
-        <img src="img/CursorNormal.cur" alt="Custom Cursor" class="cursor-image" style="display: inline;">
-    </div>
 
-        <div id="main-content" class="table">
-           <header class="header">
-                <h1>Sukiflee waedorloh's Resume</h1>
-           </header>
 
-           <aside class="menu">
-               <div class="pf">
-                   <a href="https://www.facebook.com/kokfd.ceryu/">
-                       <img src="https://scontent.fhdy1-1.fna.fbcdn.net/v/t39.30808-1/463738249_1645519479395717_1983504088097244452_n.jpg?stp=dst-jpg_tt6&cstp=mx956x960&ctp=s200x200&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=1d2534&_nc_ohc=2FTSGR3bmvcQ7kNvwFzub-k&_nc_oc=AdqITUWEx3l_uoEv1Ns-WnlQH7bQE8ASGTMX5lYirlFDRyp2VSktbz3PUl9xZAhW9os&_nc_zt=24&_nc_ht=scontent.fhdy1-1.fna&_nc_gid=_4jeSFVa7jNYPk9P-RTKSA&_nc_ss=7b289&oh=00_AQKOIk6p9qZsDfsT_aNKJLOwBJPdLP9Id-Iu38P3FatKsQ&oe=6A9F04F4" alt="Profile picture">
-                   </a>
-                   <a href="https://www.facebook.com/kokfd.ceryu/" class="profile-link">Profile</a>
-               </div>
-           </aside>
+            <header>
+                <div class="topnav">
+                        <a href="#home" class="active">Logo</a>
+                   <search id="search">
+                    <form action="https://www.google.com/search" method="get">
+                      <input type="text" name="q" placeholder="Search to google">
+                      <button type="submit">Search</button>
+                    </form>
+                  </search>
+                        <div id="myLinks">
+                            <a href="#news">News</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#about">About</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                </div>
+            </header>
 
-           <main class="content">
-               <section class="CT1">
-                   <h2>About Me</h2>
-                   <h3>My name is sukiflee waedorloh</h3>
-                   <p>I am a passionate individual with a strong interest in technology and innovation.</p>
-               </section>
+    <div class="slideshow-container">
 
-               <section class="CT2">
-                   <h2>Education</h2>
-                   <p>i study at Fatoni university , education information technology</p>
-               </section>
+        <div class="mySlides fade">
+            <div id="main-content" class="table">
+            <header class="header">
+                    <h1>Sukiflee waedorloh's Resume</h1>
+            </header>
 
-               <section class="CT3">
-                   <h2>Skills</h2>
-                   <ul>
-                       <li>Speak language: Malayu, Thai, English</li>
-                       <li>Programming Languages: c, Python, JavaScript, HTML/CSS</li>
-                       <li>Database Management: MySQL, MongoDB</li>
-                       <li>Web Development: React, Node.js, Express</li>
-                       <li>Network Administration: TCP/IP, DNS, DHCP</li>
-                   </ul>
-               </section>
-           </main>
+            <aside class="menu">
+                <div class="pf">
+                    <a href="https://www.facebook.com/kokfd.ceryu/">
+                        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+                    </a>
+                    <a href="https://www.facebook.com/kokfd.ceryu/" class="profile-link">Profile</a>
+                </div>
+            </aside>
 
-           <footer class="footer">
-               <p>contact me: sukiflee</p>
-           </footer>
+            <main class="content">
+                <section class="CT1" id="about">
+                    <h2>About Me</h2>
+                    <h3>My name is sukiflee waedorloh</h3>
+                    <p>I am a passionate individual with a strong interest in technology and innovation.</p>
+                </section>
+
+                <section class="CT2">
+                    <h2>Education</h2>
+                    <p>i study at Fatoni university , education information technology</p>
+                </section>
+
+                <section class="CT3">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Speak language: Malayu, Thai, English</li>
+                        <li>Programming Languages: c, Python, JavaScript, HTML/CSS</li>
+                        <li>Database Management: MySQL, MongoDB</li>
+                        <li>Web Development: React, Node.js, Express</li>
+                        <li>Network Administration: TCP/IP, DNS, DHCP</li>
+                    </ul>
+                </section>
+            </main>
+
+            <footer class="footer" id="contact">
+                <p>contact me: sukiflee</p>
+            </footer>
+            </div>
         </div>
+
+
+        <div class="mySlides fade">
+           <div id="main-content" class="table">
+            <header class="header">
+                    <h1> Resume</h1>
+            </header>
+
+            <aside class="menu">
+                <div class="pf">
+                    
+                    
+                </div>
+            </aside>
+
+            <main class="content">
+                <section class="CT1">
+                    
+                </section>
+
+                <section class="CT2">
+                    
+                </section>
+
+                <section class="CT3">
+                    
+                </section>
+            </main>
+
+            <footer class="footer">
+              
+            </footer>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+           
+        </div>
+    </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="slide.js"></script>
+    <script src="button.js"></script>
     <script src="script.js"></script>
+    <script src="menu bar.js"></script>
+
     </body>
 </html>
